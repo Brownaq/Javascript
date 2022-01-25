@@ -27,22 +27,10 @@ let newText = text.replace("an apple", "an apple, a banana, and a kiwi");
 console.log("New Text:", newText);
 
 let text1 = "Goodbye";
-let text2 = "World 😔";
+let text2 = "Cruel World 😔";
 let text3 = text1.concat(" ", text2);
 console.log(text3)
 
 text1 = "      It'll be better without me. 😭      ";
 text2 = text1.trim();
 console.log("...", text2)
-
-
-
-
-
-
-
-
-
-
-
-
