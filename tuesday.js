@@ -90,10 +90,9 @@ const person1 = {
 
 const person2 = {
     firstName: "Riley",
-    middleName: "Unknown",
     lastName: "Forman",
     dob: "11/00/2007",
-    gender: "Waffle",
+    gender: "Waffle Iron",
     height: "5'9",
 }
 
@@ -108,11 +107,11 @@ const person3 = {
 
 const person4 = {
     firstName: "Bryson",
-    middleName: "Unknown",
     lastName: "Albers",
     dob: "00/00/2007",
     gender: "Your Majesty",
     height: "6'1",
+    lifePlans: "Maybe?",
 }
 
 const person5 = {
@@ -122,15 +121,30 @@ const person5 = {
     dob: "Recent",
     gender: "Laptop",
     height: "10 inches",
+    lifePlans: "Becoming a lawyer",
 }
 
 const people = [person1, person2, person3, person4, person5];
+person2.lifePlans = "World Domination";
 
 // console.log(people);
 // console.log(person1.firstName, person2.firstName);
-console.log(people[0].firstName);
+// console.log(people[0].firstName);
 
 for(let i = 0; i < people.length; i++) {
-    let fullName = people[i].firstName + " " + people[i].middleName + " " + people[i].lastName;
+    let fullName = people[i].firstName + " " + people[i].lastName;
     console.log("Full Name:", fullName);
+    if(people[i].middleName) {
+        console.log("Middle Name:", people[i].middleName);
+    }
+    
+    if(people[i].gender === "Waffle Iron") {
+        console.log("Gender:", people[i].gender);
+    }
+
+    if(people[i].lifePlans) {
+        console.log("Life Plans:", people[i].lifePlans);
+    }
 }
+
+// console.log("Person 2 after change:", person2);
